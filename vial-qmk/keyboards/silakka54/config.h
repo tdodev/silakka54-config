@@ -16,6 +16,25 @@
 
 #pragma once
 
+// defaults to MASTER_LEFT
+// #define MASTER_LEFT
+// #define MASTER_RIGHT
+
+// EEPROM emulation config
+// usable EEPROM size
+#define WEAR_LEVELING_LOGICAL_SIZE 1024*16 // 16kb usable EEPROM
+// backing size = multiple of logical size
+#define WEAR_LEVELING_BACKING_SIZE 1024*1024 // 1mb backing flash size (out of 2mb available)
+
+// default value for layer count = 4
+#define DYNAMIC_KEYMAP_LAYER_COUNT 16
+// default value for macro at 16kb = 16
+#define DYNAMIC_KEYMAP_MACRO_COUNT 64
+// default value for combos, tap dance, key overrides at 16kb = 32
+#define VIAL_TAP_DANCE_ENTRIES 64
+#define VIAL_COMBO_ENTRIES 64
+#define VIAL_KEY_OVERRIDE_ENTRIES 64
+
 #define SERIAL_USART_FULL_DUPLEX
 #define SERIAL_USART_TX_PIN GP0
 #define SERIAL_USART_RX_PIN GP1
